@@ -52,12 +52,12 @@ public class Judgement extends Game {
 	static int CENTERX = SCREENWIDTH / 2;
 	static int CENTERY = SCREENHEIGHT / 2;
 	
-	//--------- Miscelaneous ---------
+	//--------- Miscellaneous ---------
 	//booleans - A way of detecting a pushed key in game
 	//random - Use this to generate a random number
 	//state - Game states used to show specific info ie. pause/running
 	//option - In game common choices at given times
-	//Fonts - Variouse font sizes in the Arial style for different in game text
+	//Fonts - Various font sizes in the Arial style for different in game text
 	boolean keyLeft, keyRight, keyUp, keyDown, keyInventory, keyAction, keyBack, keyEnter, keySpace;
 	Random random = new Random();
 	STATE state; 
@@ -197,7 +197,7 @@ public class Judgement extends Game {
 		playerMob.getAttack("sword").addAttackAnim(20, 28, 12, 4, 3, 6);
 		playerMob.getAttack("sword").addInOutAnim(16, 24, 8, 0, 1, 10);
 		playerMob.setCurrentAttack("sword"); //Starting attack
-		playerMob.setHealth(35); //If you change the starting max health, dont forget to change it in inGameMenu.java max health also
+		playerMob.setHealth(35); //If you change the starting max health, don't forget to change it in inGameMenu.java max health also
 		sprites().add(playerMob);
 		
 		//*****Initialize and setup first Map******************************************************************
