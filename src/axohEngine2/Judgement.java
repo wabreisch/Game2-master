@@ -165,7 +165,7 @@ public class Judgement extends Game {
 		mapX = startPosX;
 		mapY = startPosY;
 		scale = 4;
-		playerSpeed = 3;
+		playerSpeed = 9; // was 3 originally
 		
 		//****Initialize spriteSheets*********************************************************************
 		extras1 = new SpriteSheet("/textures/extras/extras1.png", 8, 8, 32, scale);
@@ -199,6 +199,8 @@ public class Judgement extends Game {
 		playerMob.setCurrentAttack("sword"); //Starting attack
 		playerMob.setHealth(35); //If you change the starting max health, don't forget to change it in inGameMenu.java max health also
 		sprites().add(playerMob);
+		
+//		randomNPC = new Mob(this, graphics(), mainCharacter, 40, TYPE.PLAYER, "mainC", true);
 		
 		//*****Initialize and setup first Map******************************************************************
 		mapBase = new MapDatabase(this, graphics(), scale);
@@ -932,7 +934,7 @@ public class Judgement extends Game {
 		}
 	}
 
-	/**
+	/**d
 	 * Inherited Method
 	 * Currently unused
 	 */
